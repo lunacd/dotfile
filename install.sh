@@ -1,5 +1,8 @@
 #!/bin/env bash
 
-ln -s .gitignore $HOME/.gitignore
+if [[ -f $HOME/.gitignore ]]; then
+	rm $HOME/.gitignore
+fi
+cp .gitignore $HOME/.gitignore
 git config --global core.excludesFile $HOME/.gitignore
 
