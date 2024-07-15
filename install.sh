@@ -1,8 +1,12 @@
 #!/bin/env bash
 
-if [[ -f $HOME/.gitignore ]]; then
-	rm $HOME/.gitignore
-fi
-cp .gitignore $HOME/.gitignore
-git config --global core.excludesFile $HOME/.gitignore
+install_file() {
+	if [[ -f "$HOME/$1" ]]; then
+		rm "$HOME/$1"
+	fi
+	cp "$1" "$HOME/$1"
+}
+
+install_file .gitignore
+install_file .gitconfig
 

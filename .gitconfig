@@ -1,0 +1,8 @@
+[core]
+	excludesFile = ~/.gitignore
+[user]
+	name = "Haowen Liu"
+	email = lhw@lunacd.com
+	signingkey = F65B4067F3357C78
+[commit]
+	gpgsign = true
