@@ -8,5 +8,7 @@ install_file() {
 }
 
 install_file .gitignore
-install_file .gitconfig
 
+git config --global commit.gpgsign true
+git config --global user.signingkey F65B4067F3357C78
+git config --global core.excludesFile ~/.gitignore
