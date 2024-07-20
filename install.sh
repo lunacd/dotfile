@@ -10,3 +10,6 @@ install_file() {
 install_file .gitignore
 
 git config --global core.excludesFile ~/.gitignore
+git config --global user.name "Haowen Liu"
+git config --global user.email "lhw@lunacd.com"
+git config --global pull.ff only
